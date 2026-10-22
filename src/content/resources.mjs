@@ -1,0 +1,150 @@
+/** Resources section content. */
+export { articles } from './articles.mjs';
+
+export const resourcesHub = {
+  navTitle: 'Resources',
+  short: 'Articles, AI guides and illustrative case studies on AI and digital transformation.',
+  menu: 'Insights, guides and case studies',
+  icon: 'bookOpen',
+  image: 'resources-hub',
+  metaTitle: 'Resources: Insights, AI Guides & Case Studies',
+  metaDescription: 'Explore White Messenger resources: practical articles on AI and software engineering, step-by-step AI guides and illustrative case studies on digital transformation.',
+  eyebrow: 'Resources',
+  h1: 'Insights for Smarter Technology Decisions',
+  lead: 'Practical articles, guides and illustrative scenarios to help you plan AI initiatives, build better software and make confident technology decisions.',
+};
+
+export const blogPage = {
+  navTitle: 'Blog',
+  short: 'Practical articles on AI, software architecture, automation, integration and security.',
+  icon: 'fileText',
+  image: 'blog',
+  metaTitle: 'Blog: AI, Software Engineering & Automation',
+  metaDescription: 'Read the White Messenger blog for practical articles on generative AI, SaaS architecture, workflow automation, API integration and secure web development.',
+  eyebrow: 'Blog',
+  h1: 'Practical Thinking on AI and Software',
+  lead: 'Articles written by practitioners, focused on what works in real projects, with examples, trade-offs and recommendations you can apply.',
+};
+
+export const aiGuidesPage = {
+  navTitle: 'AI Guides',
+  short: 'Step-by-step guides for planning, choosing and governing AI initiatives.',
+  icon: 'sparkles',
+  image: 'ai-guides',
+  metaTitle: 'AI Guides: Readiness, RAG, Evaluation & Policy',
+  metaDescription: 'Practical AI guides from White Messenger: an AI readiness checklist, choosing between RAG and fine-tuning, evaluating AI features before launch and writing an AI usage policy.',
+  eyebrow: 'AI Guides',
+  h1: 'Practical Guides for Putting AI to Work',
+  lead: 'Concise, actionable guides for leaders and teams planning AI initiatives, covering readiness, technique selection, evaluation and responsible use.',
+  guides: [
+    {
+      id: 'ai-readiness-checklist',
+      title: 'AI readiness checklist',
+      summary: 'Use this checklist to assess whether a proposed AI initiative has the foundations it needs. Gaps are not reasons to stop; they show what to address first.',
+      groups: [
+        { label: 'Strategy and use case', items: ['The task to improve is specific and described in plain language', 'A business owner is accountable for the outcome', 'Success measures and a current baseline are agreed', 'The cost of an AI mistake is understood and acceptable with review'] },
+        { label: 'Data', items: ['The data or documents the AI needs are identified and accessible', 'Data quality and freshness are known, including gaps', 'Sensitive and personal data are classified', 'Representative examples exist for testing'] },
+        { label: 'Technology and integration', items: ['It is clear where AI output will appear in existing tools', 'Integration options (APIs, exports) for source and target systems are known', 'Hosting and data-residency requirements are defined', 'Monitoring and logging responsibilities are assigned'] },
+        { label: 'People and governance', items: ['Users have been involved in defining the problem', 'Review responsibilities for AI output are defined', 'An AI usage policy exists or is being drafted', 'Training and change communication are planned'] },
+      ],
+    },
+    {
+      id: 'rag-vs-fine-tuning',
+      title: 'RAG or fine-tuning? Choosing how to customise a language model',
+      summary: 'Retrieval-augmented generation and fine-tuning solve different problems. Many teams reach for fine-tuning when retrieval would be simpler, cheaper and easier to keep current.',
+      table: {
+        columns: ['Consideration', 'Retrieval-augmented generation (RAG)', 'Fine-tuning'],
+        rows: [
+          ['Primary purpose', 'Give the model access to specific, current information', 'Teach the model a style, format or specialised behaviour'],
+          ['Keeping knowledge current', 'Update documents and re-index; no retraining', 'Requires retraining when knowledge changes'],
+          ['Citations and traceability', 'Natural: answers can link to source passages', 'Difficult: knowledge is absorbed into model weights'],
+          ['Data needed', 'Well-organised source documents', 'Many high-quality example input-output pairs'],
+          ['Access control', 'Can filter retrieved content per user', 'Cannot easily restrict what the model has learned'],
+          ['Typical use', 'Policy assistants, product Q&A, research support', 'Consistent tone, structured outputs, domain phrasing at scale'],
+        ],
+      },
+      advice: ['Start with good prompting and retrieval; measure quality on real questions', 'Consider fine-tuning only when retrieval and prompting cannot reach the quality bar, or when volume makes a smaller tuned model more economical', 'The two techniques can be combined: a tuned model for style, with retrieval for facts'],
+    },
+    {
+      id: 'evaluating-ai-features',
+      title: 'Evaluating an AI feature before launch',
+      summary: 'Evaluation turns opinions about AI quality into evidence. A simple, repeatable process is far better than ad-hoc testing.',
+      steps: [
+        { t: 'Collect real examples', d: 'Gather representative inputs from the actual process, including difficult and unusual cases.' },
+        { t: 'Define good output', d: 'For each example, record the expected answer or the criteria a reviewer would use.' },
+        { t: 'Choose measures', d: 'Accuracy of extracted fields, factual correctness, citation quality, tone, refusal behaviour when information is missing.' },
+        { t: 'Run and score', d: 'Score every prompt, model or retrieval change against the full set, combining automated checks with expert review.' },
+        { t: 'Test safety', d: 'Include attempts to misuse the system, such as prompt injection or requests outside scope, and confirm safe behaviour.' },
+        { t: 'Set launch criteria', d: 'Agree the minimum scores required to launch and the monitoring that will continue in production.' },
+      ],
+    },
+    {
+      id: 'ai-usage-policy',
+      title: 'Writing an AI usage policy for your team',
+      summary: 'A short, clear policy helps employees use AI tools productively while protecting the organisation. It should enable, not just restrict.',
+      elements: [
+        { t: 'Approved tools', d: 'List which AI tools are approved for work use and how to request new ones.' },
+        { t: 'Data rules', d: 'Specify which categories of information may and may not be entered into AI tools.' },
+        { t: 'Human responsibility', d: 'Make clear that people remain responsible for work they produce with AI assistance.' },
+        { t: 'Disclosure', d: 'State when AI use should be disclosed to customers or colleagues.' },
+        { t: 'Quality checks', d: 'Require verification of facts, figures and citations produced by AI.' },
+        { t: 'Reporting', d: 'Explain how to report problems, errors or concerns about AI behaviour.' },
+      ],
+    },
+  ],
+};
+
+export const caseStudiesPage = {
+  navTitle: 'Case Studies',
+  short: 'Illustrative scenarios showing how our approach applies to common business challenges.',
+  icon: 'fileText',
+  image: 'case-studies',
+  metaTitle: 'Case Studies: Illustrative Project Scenarios',
+  metaDescription: 'Illustrative scenarios showing how White Messenger approaches AI, automation and software challenges across logistics, healthcare, retail and professional services.',
+  eyebrow: 'Case Studies',
+  h1: 'How We Approach Real-World Challenges',
+  lead: 'Illustrative scenarios that show how our delivery approach applies to common challenges. Published client case studies will be added here as they become available.',
+  notice: 'The scenarios on this page are illustrative demonstrations created to explain our approach. They do not describe specific White Messenger clients, and the organisations described are fictional composites. No results are claimed.',
+  studies: [
+    {
+      id: 'logistics-document-intake', industry: 'Logistics', industrySlug: 'logistics', icon: 'truck',
+      title: 'Automating delivery document intake for a regional distributor',
+      context: 'A regional distributor receives proof-of-delivery notes and supplier delivery documents by email and scanner, in many formats. A small operations team re-keys details into the warehouse system each day.',
+      challenge: 'Backlogs build up during peak periods, data entry errors cause invoice disputes, and managers cannot see processing status.',
+      approach: ['Map the current intake process and collect sample documents from major suppliers', 'Classify documents and extract key fields with document AI', 'Validate extracted data against open purchase orders', 'Route low-confidence items to a review screen', 'Post validated data to the warehouse system and show status on a dashboard'],
+      components: ['Intelligent document processing', 'Workflow orchestration', 'Warehouse system integration', 'Operations dashboard'],
+      measures: ['Average time from document receipt to system entry', 'Share of documents processed without manual edits', 'Number of invoice disputes linked to data errors', 'Backlog size during peak periods'],
+      links: ['solutions/document-processing', 'industries/logistics'],
+    },
+    {
+      id: 'clinic-appointment-assistant', industry: 'Healthcare', industrySlug: 'healthcare', icon: 'heartPulse',
+      title: 'A patient enquiry assistant for a multi-location clinic group',
+      context: 'A clinic group’s reception teams answer a high volume of calls about opening hours, preparation instructions and appointment changes, limiting time for patients at the front desk.',
+      challenge: 'Phone queues are long at peak times, information given varies between locations, and clinical questions occasionally reach non-clinical staff.',
+      approach: ['Analyse common enquiry types from call logs and emails', 'Consolidate approved patient information into a reviewed knowledge base', 'Build an assistant that answers general questions with source links', 'Route clinical questions and sensitive topics to staff', 'Integrate appointment change requests with the booking system after authentication'],
+      components: ['AI chatbot', 'Knowledge management', 'Booking system integration', 'Escalation workflow'],
+      measures: ['Share of enquiries resolved without staff involvement', 'Phone queue length at peak times', 'Patient satisfaction with digital responses', 'Accuracy of answers in periodic reviews'],
+      links: ['ai/ai-chatbot-development', 'industries/healthcare'],
+    },
+    {
+      id: 'retail-inventory-planning', industry: 'Retail', industrySlug: 'retail', icon: 'store',
+      title: 'Demand-led replenishment for a specialty retailer',
+      context: 'A specialty retailer with several stores and an online shop plans replenishment in spreadsheets, using last year’s sales and buyer intuition.',
+      challenge: 'Popular items sell out at some stores while others hold surplus, and planners spend days each week assembling data.',
+      approach: ['Unify stock and sales data from point-of-sale, e-commerce and warehouse systems', 'Build demand forecasts at product and location level', 'Generate replenishment and inter-store transfer suggestions', 'Provide a planner dashboard to review and approve actions', 'Monitor forecast accuracy and refine models'],
+      components: ['Data engineering', 'Predictive analytics', 'Inventory intelligence dashboard', 'ERP integration'],
+      measures: ['Frequency of stock-outs on key items', 'Stock held relative to sales', 'Planner time spent per weekly cycle', 'Forecast accuracy by category'],
+      links: ['solutions/inventory-intelligence', 'industries/retail-ecommerce'],
+    },
+    {
+      id: 'professional-services-knowledge', industry: 'Professional Services', industrySlug: 'professional-services', icon: 'briefcase',
+      title: 'A knowledge assistant for an advisory firm',
+      context: 'An advisory firm’s consultants spend significant time searching shared drives and asking colleagues for past proposals, methodologies and templates.',
+      challenge: 'Valuable knowledge is hard to find, new joiners take longer to become productive and work is often recreated from scratch.',
+      approach: ['Identify authoritative repositories and assign content owners', 'Index documents with metadata and access permissions', 'Build a permission-aware assistant that answers with citations', 'Embed search and Q&A in the firm’s collaboration tool', 'Report unanswered questions to content owners'],
+      components: ['AI knowledge management (RAG)', 'Enterprise search', 'Document system integration', 'Usage analytics'],
+      measures: ['Time to find relevant precedent material', 'Reuse of existing templates and proposals', 'New-joiner time to first independent deliverable', 'User ratings of answer usefulness'],
+      links: ['solutions/ai-knowledge-management', 'industries/professional-services'],
+    },
+  ],
+};

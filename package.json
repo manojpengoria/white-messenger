@@ -1,0 +1,26 @@
+{
+  "name": "white-messenger",
+  "version": "1.0.0",
+  "private": true,
+  "description": "White Messenger corporate website: static HTML, Tailwind CSS and vanilla JavaScript.",
+  "type": "module",
+  "scripts": {
+    "images": "node scripts/generate-images.mjs",
+    "pages": "node src/build.mjs",
+    "css": "tailwindcss -i assets/css/input.css -o assets/css/styles.css --minify",
+    "css:watch": "tailwindcss -i assets/css/input.css -o assets/css/styles.css --watch",
+    "build": "npm run pages && npm run css",
+    "build:all": "npm run images && npm run build",
+    "serve": "node scripts/serve.mjs",
+    "qa": "node scripts/qa.mjs",
+    "qa:browser": "node scripts/qa-browser.mjs"
+  },
+  "devDependencies": {
+    "@fontsource-variable/plus-jakarta-sans": "^5.1.1",
+    "@tailwindcss/typography": "^0.5.16",
+    "devicon": "^2.16.0",
+    "puppeteer-core": "^23.11.1",
+    "sharp": "^0.33.5",
+    "tailwindcss": "^3.4.17"
+  }
+}

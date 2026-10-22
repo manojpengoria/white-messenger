@@ -1,0 +1,728 @@
+[
+  {
+    "key": "home-hero",
+    "status": "placeholder",
+    "files": [
+      "assets/images/hero/home-hero-ai-core-640.webp",
+      "assets/images/hero/home-hero-ai-core-1280.webp"
+    ],
+    "size": "1280x1040",
+    "alt": "Illustration of a glowing AI core surrounded by floating analytics panels in a bright blue workspace",
+    "prompt": "Hero image, 1280x1040. A serene humanoid AI figure in white ceramic and translucent blue glass, seen in three-quarter profile facing left, with fine glowing circuitry. Behind it a soft-focus futuristic city skyline and floating holographic dashboards (charts, document cards, code panels). Left third kept bright and uncluttered for overlaid headline text. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "home-ai-cube",
+    "status": "placeholder",
+    "files": [
+      "assets/images/ai/ai-capabilities-chip-640.webp",
+      "assets/images/ai/ai-capabilities-chip-1200.webp"
+    ],
+    "size": "1200x1000",
+    "alt": "Illustration of a translucent blue AI processor chip resting on a grid of glass cubes",
+    "prompt": "A large translucent blue glass cube embossed with an abstract processor chip motif, sitting on a field of smaller frosted-glass cubes that recede into a pale-blue haze. Subtle cyan rim light. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "cta-collaboration",
+    "status": "placeholder",
+    "files": [
+      "assets/images/hero/cta-collaboration-800.webp",
+      "assets/images/hero/cta-collaboration-1600.webp"
+    ],
+    "size": "1600x700",
+    "alt": "Illustration of a collaborative digital workspace with connected project panels",
+    "prompt": "Wide banner, 1600x700. A professional at a clean white desk reviewing an AI analytics dashboard on a large monitor, holographic blue interface elements floating nearby. Right half contains the subject; left half bright and empty for text. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "ai-overview",
+    "status": "placeholder",
+    "files": [
+      "assets/images/ai/ai-overview-640.webp",
+      "assets/images/ai/ai-overview-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of an AI neural network hub connecting data, documents and workflow panels",
+    "prompt": "A luminous neural-network sphere hovering above a white platform, threads of light connecting it to floating panels showing documents, charts and workflow nodes. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "generative-ai",
+    "status": "placeholder",
+    "files": [
+      "assets/images/ai/generative-ai-640.webp",
+      "assets/images/ai/generative-ai-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of generative AI producing text, image and code panels from a central spark",
+    "prompt": "A glowing generative core emitting layered translucent cards — paragraphs of abstract text lines, an image thumbnail and a code snippet — arranged in an arc on a pale-blue stage. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "ai-agents",
+    "status": "placeholder",
+    "files": [
+      "assets/images/ai/ai-agent-development-640.webp",
+      "assets/images/ai/ai-agent-development-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of an AI agent coordinating connected task cards and tools",
+    "prompt": "A friendly minimalist robot assistant made of white matte material with blue light accents, orchestrating floating task cards connected by glowing lines to tool icons (calendar, database, email). Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "ai-chatbots",
+    "status": "placeholder",
+    "files": [
+      "assets/images/ai/ai-chatbot-development-640.webp",
+      "assets/images/ai/ai-chatbot-development-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of conversational AI chat bubbles floating above a smartphone",
+    "prompt": "A smartphone standing upright on a white surface with translucent glass chat bubbles rising from the screen, one bubble showing a small AI spark icon, soft cyan glow. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "intelligent-automation",
+    "status": "placeholder",
+    "files": [
+      "assets/images/ai/intelligent-automation-640.webp",
+      "assets/images/ai/intelligent-automation-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of automated workflow nodes passing data between connected systems",
+    "prompt": "An elegant 3D flowchart of rounded glass nodes on a white plane, small light pulses travelling along blue conduits between nodes representing automated business steps. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "machine-learning",
+    "status": "placeholder",
+    "files": [
+      "assets/images/ai/machine-learning-640.webp",
+      "assets/images/ai/machine-learning-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of machine learning model training curves and data clusters",
+    "prompt": "Floating 3D scatter-plot clusters of glowing spheres in blue and cyan, with a translucent curve fitting through them and a small model-training progress panel. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "services-overview",
+    "status": "placeholder",
+    "files": [
+      "assets/images/services/services-overview-640.webp",
+      "assets/images/services/services-overview-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of stacked software layers representing end-to-end digital services",
+    "prompt": "Stacked translucent glass layers floating above each other, each layer showing a different interface (web app, mobile app, cloud diagram, analytics). Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "custom-software",
+    "status": "placeholder",
+    "files": [
+      "assets/images/services/custom-software-development-640.webp",
+      "assets/images/services/custom-software-development-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of modular software components assembling into an application",
+    "prompt": "Modular 3D blocks with code-pattern surfaces snapping together to form an application window, a developer workstation softly blurred in the background. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "web-applications",
+    "status": "placeholder",
+    "files": [
+      "assets/images/services/web-application-development-640.webp",
+      "assets/images/services/web-application-development-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of a responsive web application dashboard in a browser window",
+    "prompt": "A floating browser window displaying a clean SaaS dashboard, with responsive tablet and phone versions of the same interface arranged around it. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "mobile-applications",
+    "status": "placeholder",
+    "files": [
+      "assets/images/services/mobile-app-development-640.webp",
+      "assets/images/services/mobile-app-development-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of mobile app screens fanned out above a smartphone",
+    "prompt": "Three smartphones at slight angles showing onboarding, dashboard and checkout screens of a modern app, light-blue backdrop, subtle reflections. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "saas-platforms",
+    "status": "placeholder",
+    "files": [
+      "assets/images/services/saas-product-development-640.webp",
+      "assets/images/services/saas-product-development-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of a multi-tenant SaaS platform with subscription and analytics panels",
+    "prompt": "A central cloud platform tile with several identical tenant workspaces orbiting it, each showing a small dashboard; subscription and usage panels nearby. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "ecommerce",
+    "status": "placeholder",
+    "files": [
+      "assets/images/services/ecommerce-development-640.webp",
+      "assets/images/services/ecommerce-development-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of an online storefront with product cards and checkout panel",
+    "prompt": "A floating online storefront with product cards, a shopping bag made of frosted glass and a secure checkout panel, bright retail-clean aesthetic. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "cloud-devops",
+    "status": "placeholder",
+    "files": [
+      "assets/images/services/cloud-devops-640.webp",
+      "assets/images/services/cloud-devops-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of cloud infrastructure with deployment pipeline stages",
+    "prompt": "A soft 3D cloud form above a row of server modules, a looping pipeline ribbon labelled only with icons (build, test, deploy) wrapping around it. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "api-integration",
+    "status": "placeholder",
+    "files": [
+      "assets/images/services/api-integration-640.webp",
+      "assets/images/services/api-integration-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of connected systems exchanging data through API connectors",
+    "prompt": "Several distinct application tiles connected by glowing cables to a central connector hub, data packets travelling along the cables. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "ui-ux-design",
+    "status": "placeholder",
+    "files": [
+      "assets/images/services/ui-ux-design-640.webp",
+      "assets/images/services/ui-ux-design-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of interface wireframes evolving into a polished design",
+    "prompt": "A design canvas with wireframe outlines on the left transitioning to a polished colourful interface on the right, a stylus and colour swatches nearby. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "data-engineering",
+    "status": "placeholder",
+    "files": [
+      "assets/images/services/data-engineering-640.webp",
+      "assets/images/services/data-engineering-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of data pipelines flowing into an analytics warehouse",
+    "prompt": "Streams of luminous data particles flowing from several source cylinders through filter stages into a large glass data warehouse block. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "qa-testing",
+    "status": "placeholder",
+    "files": [
+      "assets/images/services/software-testing-qa-640.webp",
+      "assets/images/services/software-testing-qa-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of automated test results with passing checks across application screens",
+    "prompt": "Application screens under a scanning beam of light, green-blue check marks appearing beside components, a test-run progress panel floating nearby. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "app-modernization",
+    "status": "placeholder",
+    "files": [
+      "assets/images/services/application-modernization-640.webp",
+      "assets/images/services/application-modernization-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of a legacy system transforming into modern cloud services",
+    "prompt": "A heavy grey legacy server block on the left gradually dissolving into light, modular blue cloud services on the right, a transformation arc between them. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "managed-it",
+    "status": "placeholder",
+    "files": [
+      "assets/images/services/managed-it-services-640.webp",
+      "assets/images/services/managed-it-services-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of monitored infrastructure with health and uptime panels",
+    "prompt": "A tidy row of server modules with soft status lights, floating monitoring panels showing health indicators and an on-call support headset icon. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "engagement-overview",
+    "status": "placeholder",
+    "files": [
+      "assets/images/engagement/engagement-models-640.webp",
+      "assets/images/engagement/engagement-models-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of collaboration models connecting a client team with a delivery team",
+    "prompt": "Two groups of abstract figure tokens on separate glass platforms connected by a bridge of light, shared planning boards floating above. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "dedicated-team",
+    "status": "placeholder",
+    "files": [
+      "assets/images/engagement/dedicated-team-640.webp",
+      "assets/images/engagement/dedicated-team-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of a dedicated product team around a shared roadmap",
+    "prompt": "A diverse product team (stylised, faceless) around a holographic roadmap table in a bright modern office. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "fixed-price",
+    "status": "placeholder",
+    "files": [
+      "assets/images/engagement/fixed-price-projects-640.webp",
+      "assets/images/engagement/fixed-price-projects-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of a defined project scope with milestones on a timeline",
+    "prompt": "A clean milestone timeline with three glowing checkpoints and a scope document card, target emblem in the foreground. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "team-augmentation",
+    "status": "placeholder",
+    "files": [
+      "assets/images/engagement/team-augmentation-640.webp",
+      "assets/images/engagement/team-augmentation-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of specialists joining an existing team workspace",
+    "prompt": "Abstract team tokens on a board with new highlighted tokens sliding in to fill specific skill slots, collaborative and bright. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "managed-services",
+    "status": "placeholder",
+    "files": [
+      "assets/images/engagement/managed-services-640.webp",
+      "assets/images/engagement/managed-services-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of an ongoing managed service with monitoring and improvement cycles",
+    "prompt": "A continuous improvement loop rendered as a glass ring with service icons along it, monitoring panels in the background. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "time-materials",
+    "status": "placeholder",
+    "files": [
+      "assets/images/engagement/time-and-materials-640.webp",
+      "assets/images/engagement/time-and-materials-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of an adaptable sprint board with time tracking",
+    "prompt": "A flexible sprint board with movable cards and a minimalist clock face, translucent and light. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "consulting",
+    "status": "placeholder",
+    "files": [
+      "assets/images/engagement/technical-consulting-640.webp",
+      "assets/images/engagement/technical-consulting-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of an architecture review with a glowing idea emblem",
+    "prompt": "An architecture diagram spread on a glass table with a softly glowing lightbulb emblem hovering above it. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "mvp-poc",
+    "status": "placeholder",
+    "files": [
+      "assets/images/engagement/mvp-poc-development-640.webp",
+      "assets/images/engagement/mvp-poc-development-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of a prototype application launching from a planning board",
+    "prompt": "A small sleek rocket made of white ceramic lifting off from a prototype app wireframe, faint launch trail in cyan. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "industries-overview",
+    "status": "placeholder",
+    "files": [
+      "assets/images/industries/industries-overview-640.webp",
+      "assets/images/industries/industries-overview-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of industry icons connected across a digital network",
+    "prompt": "A miniature city of industry tiles — hospital, bank, factory, warehouse, school, store — connected by glowing data routes on a white platform. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "healthcare",
+    "status": "placeholder",
+    "files": [
+      "assets/images/industries/healthcare-640.webp",
+      "assets/images/industries/healthcare-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of a digital healthcare dashboard with patient care indicators",
+    "prompt": "A clinician in a white coat (back or side view, face not visible) reviewing a tablet showing a patient-care dashboard, bright clinical environment with blue accents. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "fintech",
+    "status": "placeholder",
+    "files": [
+      "assets/images/industries/fintech-banking-640.webp",
+      "assets/images/industries/fintech-banking-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of financial analytics and secure transaction panels",
+    "prompt": "Glass skyscrapers at dusk-blue hour reflected in a floating financial analytics panel with candlestick charts and a secure padlock emblem. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "retail",
+    "status": "placeholder",
+    "files": [
+      "assets/images/industries/retail-ecommerce-640.webp",
+      "assets/images/industries/retail-ecommerce-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of an omnichannel retail experience with digital storefront panels",
+    "prompt": "A bright modern store interior with a shopping cart and floating digital product cards, inventory and recommendation panels overlaid. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "manufacturing",
+    "status": "placeholder",
+    "files": [
+      "assets/images/industries/manufacturing-640.webp",
+      "assets/images/industries/manufacturing-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of a smart factory with connected machine telemetry",
+    "prompt": "A clean robotic assembly line with articulated arms, floating telemetry panels showing machine health, cool blue lighting. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "logistics",
+    "status": "placeholder",
+    "files": [
+      "assets/images/industries/logistics-supply-chain-640.webp",
+      "assets/images/industries/logistics-supply-chain-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of a connected logistics network with route and shipment tracking",
+    "prompt": "An aerial-style view of a port and highway network with glowing route lines linking a warehouse, trucks and a cargo plane. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "education",
+    "status": "placeholder",
+    "files": [
+      "assets/images/industries/education-edtech-640.webp",
+      "assets/images/industries/education-edtech-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of a digital learning platform with course and progress panels",
+    "prompt": "A student at a bright desk (face not visible) using a laptop with floating course modules and progress rings around the screen. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "real-estate",
+    "status": "placeholder",
+    "files": [
+      "assets/images/industries/real-estate-640.webp",
+      "assets/images/industries/real-estate-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of property listings and building analytics",
+    "prompt": "Modern residential towers in soft daylight with floating property cards, a floor-plan panel and a map pin emblem. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "travel-hospitality",
+    "status": "placeholder",
+    "files": [
+      "assets/images/industries/travel-hospitality-640.webp",
+      "assets/images/industries/travel-hospitality-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of travel booking and itinerary panels around an aircraft",
+    "prompt": "A passenger jet climbing through a bright blue sky with translucent booking, itinerary and boarding-pass panels floating nearby. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "media-entertainment",
+    "status": "placeholder",
+    "files": [
+      "assets/images/industries/media-entertainment-640.webp",
+      "assets/images/industries/media-entertainment-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of streaming content tiles and audience analytics",
+    "prompt": "A wall of floating content thumbnails curving in an arc, a play button emblem and audience analytics panels, light studio feel. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "startups-saas",
+    "status": "placeholder",
+    "files": [
+      "assets/images/industries/startups-saas-640.webp",
+      "assets/images/industries/startups-saas-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of a SaaS product launching with growth metrics",
+    "prompt": "A small product team workspace with a launch board, product dashboard on a laptop and a subtle upward growth curve in light. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "professional-services",
+    "status": "placeholder",
+    "files": [
+      "assets/images/industries/professional-services-640.webp",
+      "assets/images/industries/professional-services-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of professional service workflows with documents and client portals",
+    "prompt": "A tidy executive desk with a laptop showing a client portal, neatly stacked digital documents and calendar panels floating above. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "solutions-overview",
+    "status": "placeholder",
+    "files": [
+      "assets/images/solutions/solutions-overview-640.webp",
+      "assets/images/solutions/solutions-overview-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of business solution modules fitting together",
+    "prompt": "Translucent puzzle-like modules (automation, analytics, support, documents) clicking together into a single glowing platform. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "sol-business-automation",
+    "status": "placeholder",
+    "files": [
+      "assets/images/solutions/business-process-automation-640.webp",
+      "assets/images/solutions/business-process-automation-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of business tasks moving automatically through approval stages",
+    "prompt": "Document and task cards gliding along a glass conveyor through approval gates, each gate lighting up as the card passes. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "sol-customer-support",
+    "status": "placeholder",
+    "files": [
+      "assets/images/solutions/ai-customer-support-640.webp",
+      "assets/images/solutions/ai-customer-support-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of an AI support assistant handling customer conversations",
+    "prompt": "A support headset emblem surrounded by multiple chat conversation cards, an AI spark routing them to the right queues. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "sol-predictive-analytics",
+    "status": "placeholder",
+    "files": [
+      "assets/images/solutions/predictive-analytics-640.webp",
+      "assets/images/solutions/predictive-analytics-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of forecast charts projecting future trends",
+    "prompt": "A 3D line chart with historical data in solid blue extending into a dotted cyan forecast band, floating over a reflective white floor. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "sol-document-processing",
+    "status": "placeholder",
+    "files": [
+      "assets/images/solutions/intelligent-document-processing-640.webp",
+      "assets/images/solutions/intelligent-document-processing-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of documents being scanned and converted into structured data",
+    "prompt": "Paper invoices and forms passing through a light scanner and emerging as neat structured data rows and fields. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "sol-knowledge",
+    "status": "placeholder",
+    "files": [
+      "assets/images/solutions/ai-knowledge-management-640.webp",
+      "assets/images/solutions/ai-knowledge-management-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of a knowledge base connected to an AI answer panel",
+    "prompt": "A floating library of glass books and files connected by light threads to an answer panel with citation markers. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "sol-sales",
+    "status": "placeholder",
+    "files": [
+      "assets/images/solutions/sales-automation-640.webp",
+      "assets/images/solutions/sales-automation-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of a sales pipeline with automated follow-up steps",
+    "prompt": "A funnel-shaped sales pipeline in frosted glass with lead cards moving through stages and small automated email and calendar icons. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "sol-inventory",
+    "status": "placeholder",
+    "files": [
+      "assets/images/solutions/inventory-intelligence-640.webp",
+      "assets/images/solutions/inventory-intelligence-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of warehouse inventory with demand and stock level indicators",
+    "prompt": "Neat warehouse shelving with parcels, holographic stock-level bars above each shelf and a demand forecast panel. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "sol-search",
+    "status": "placeholder",
+    "files": [
+      "assets/images/solutions/enterprise-search-640.webp",
+      "assets/images/solutions/enterprise-search-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of a unified search bar retrieving results from many systems",
+    "prompt": "A large glass search bar with results flowing in from several system tiles (documents, tickets, wiki, CRM), soft blue glow. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "sol-dashboards",
+    "status": "placeholder",
+    "files": [
+      "assets/images/solutions/business-dashboards-640.webp",
+      "assets/images/solutions/business-dashboards-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of a business intelligence dashboard with KPI widgets",
+    "prompt": "A wide executive dashboard on a curved display with KPI tiles, bar and line charts, clean and bright. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "sol-orchestration",
+    "status": "placeholder",
+    "files": [
+      "assets/images/solutions/workflow-orchestration-640.webp",
+      "assets/images/solutions/workflow-orchestration-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of orchestrated workflows branching across services",
+    "prompt": "A branching flow diagram of glass nodes with parallel paths merging back together, light pulses travelling through it. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "about-team",
+    "status": "placeholder",
+    "files": [
+      "assets/images/about/about-white-messenger-640.webp",
+      "assets/images/about/about-white-messenger-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of a collaborative engineering workspace with shared planning boards",
+    "prompt": "A bright, modern engineering studio with a team (stylised, faces not visible) collaborating around a large screen of architecture diagrams. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "our-approach",
+    "status": "placeholder",
+    "files": [
+      "assets/images/about/our-approach-640.webp",
+      "assets/images/about/our-approach-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of a delivery roadmap guided by a compass emblem",
+    "prompt": "A winding glass roadmap with milestone markers leading to a horizon, a compass emblem hovering above the start point. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "careers",
+    "status": "placeholder",
+    "files": [
+      "assets/images/about/careers-640.webp",
+      "assets/images/about/careers-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of a welcoming workspace for engineers and designers",
+    "prompt": "A welcoming desk setup with laptop, notebook and plant, floating skill badges (code, design, data) above it. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "resources-hub",
+    "status": "placeholder",
+    "files": [
+      "assets/images/resources/resources-hub-640.webp",
+      "assets/images/resources/resources-hub-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of articles, guides and reports arranged on a digital shelf",
+    "prompt": "Floating editorial cards — articles, guides, reports — arranged like a magazine spread on a pale-blue stage. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "ai-guides",
+    "status": "placeholder",
+    "files": [
+      "assets/images/resources/ai-guides-640.webp",
+      "assets/images/resources/ai-guides-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of an AI guidebook opening with step-by-step panels",
+    "prompt": "An open book made of light with step-by-step panels rising out of the pages, AI spark emblem. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "case-studies",
+    "status": "placeholder",
+    "files": [
+      "assets/images/resources/case-studies-640.webp",
+      "assets/images/resources/case-studies-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of project scenario reports with workflow diagrams",
+    "prompt": "A set of report folders opened to show workflow diagrams and before-and-after process maps (no numbers). Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "blog",
+    "status": "placeholder",
+    "files": [
+      "assets/images/resources/blog-640.webp",
+      "assets/images/resources/blog-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of editorial article cards on a light background",
+    "prompt": "An editorial desk scene: a tablet showing an article, coffee cup and notebook, blue ambient accents. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "article-generative-ai",
+    "status": "placeholder",
+    "files": [
+      "assets/images/resources/article-generative-ai-business-640.webp",
+      "assets/images/resources/article-generative-ai-business-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of generative AI assisting business documents and conversations",
+    "prompt": "Generative AI spark hovering over business artefacts — a proposal, an email, a chart — each being refined by light. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "article-saas-architecture",
+    "status": "placeholder",
+    "files": [
+      "assets/images/resources/article-saas-architecture-640.webp",
+      "assets/images/resources/article-saas-architecture-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of a layered SaaS architecture diagram",
+    "prompt": "An exploded 3D architecture diagram: edge, application, data and tenant layers stacked with connecting columns. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "article-workflow-efficiency",
+    "status": "placeholder",
+    "files": [
+      "assets/images/resources/article-ai-workflow-efficiency-640.webp",
+      "assets/images/resources/article-ai-workflow-efficiency-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of a streamlined workflow with AI-assisted steps",
+    "prompt": "A tangled path on the left straightening into a clean efficient line on the right, AI nodes placed at decision points. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "article-api-strategies",
+    "status": "placeholder",
+    "files": [
+      "assets/images/resources/article-api-integration-strategies-640.webp",
+      "assets/images/resources/article-api-integration-strategies-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of systems linked through an integration layer",
+    "prompt": "Several application blocks linked through a central translucent integration layer with tidy, labelled-by-colour connections. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "article-secure-web",
+    "status": "placeholder",
+    "files": [
+      "assets/images/resources/article-secure-web-applications-640.webp",
+      "assets/images/resources/article-secure-web-applications-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of a web application protected by layered security shields",
+    "prompt": "A browser window protected by concentric translucent shield layers, small lock and key emblems, calm and reassuring. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  },
+  {
+    "key": "contact-hero",
+    "status": "placeholder",
+    "files": [
+      "assets/images/hero/contact-conversation-640.webp",
+      "assets/images/hero/contact-conversation-1200.webp"
+    ],
+    "size": "1200x900",
+    "alt": "Illustration of a message being sent to start a project conversation",
+    "prompt": "A paper plane made of frosted glass gliding from an open laptop toward a soft glowing horizon, small chat bubbles trailing. Light theme. White and pale-blue environment, electric blue (#2563EB) with cyan (#22D3EE) and teal (#2A7D9C) accents. Premium photoreal 3D render, soft diffuse studio lighting, soft shadows, shallow depth of field, clean composition with generous negative space. No text, no logos, no watermarks, no recognisable real people or brands."
+  }
+]
