@@ -177,14 +177,14 @@ async function exists(p) { try { await access(p); return true; } catch { return 
 
 async function renderIllustrations() {
   for (const img of Object.values(IMAGES)) {
-    if (img.status === 'final') continue; // never overwrite delivered assets
+    if (img.status !== 'placeholder') continue; // never overwrite final or reference assets
     await mkdir(OUT(`assets/images/${img.dir}`), { recursive: true });
     const svg = Buffer.from(illustration(img));
     for (const width of img.widths) {
       await sharp(svg).resize(width, Math.round((width * img.h) / img.w)).webp({ quality: 80, effort: 5 }).toFile(OUT(imageSrc(img, width)));
     }
   }
-  console.log(`Rendered ${Object.keys(IMAGES).length} illustrations`);
+  console.log(`Rendered ${Object.values(IMAGES).filter((i) => i.status === 'placeholder').length} illustrations`);
 }
 
 async function renderLogo() {
@@ -227,7 +227,7 @@ async function renderLogo() {
 }
 
 async function writeManifest() {
-  const rows = Object.values(IMAGES).map((i) => ({
+  const rows = Object.values(IMAGES).filter((i) => !i.single).map((i) => ({
     key: i.key, status: i.status, files: i.widths.map((w) => imageSrc(i, w)), size: `${i.w}x${i.h}`, alt: i.alt, prompt: i.prompt,
   }));
   await writeFile(OUT('assets/images/manifest.json'), JSON.stringify(rows, null, 2));

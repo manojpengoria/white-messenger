@@ -1,3 +1,5 @@
+import { STOCK_IMAGES } from './stock-images.mjs';
+
 /**
  * Image registry: single source of truth for every content image.
  *
@@ -169,5 +171,11 @@ export const IMAGES = Object.fromEntries([
 ]);
 
 export function imageSrc(img, width) {
+  if (img.single) return `assets/images/${img.dir}/${img.name}.webp`;
   return `assets/images/${img.dir}/${img.name}-${width}.webp`;
+}
+
+/** Homepage photographs (Unsplash, see src/stock-images.mjs and `npm run images:stock`). */
+for (const p of STOCK_IMAGES) {
+  IMAGES[p.key] = { key: p.key, dir: 'home', name: p.file, w: p.w, h: p.h, widths: [p.w / 2, p.w], status: 'stock', alt: p.alt, source: p.source, prompt: 'Photograph from Unsplash.' };
 }

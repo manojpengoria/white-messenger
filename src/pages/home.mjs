@@ -23,6 +23,9 @@ const homeHead = (ctx, id, title, sub, action) => `<div class="mb-8 flex flex-co
   ${action ? `<div class="shrink-0">${linkArrow(ctx, action.label, action.id)}</div>` : ''}
 </div>`;
 
+/** Homepage photographs (see src/stock-images.mjs). */
+const WWD_IMAGES = { 'ai/index': 'stock-wwd-ai', 'services/software-development': 'stock-wwd-software', 'services/mobile-app-development': 'stock-wwd-mobile', 'services/cloud-devops': 'stock-wwd-cloud' };
+
 export function homePage() {
   const ctx = ctxFor('index.html', 'home');
   const heroStats = [
@@ -37,8 +40,8 @@ export function homePage() {
   const body = `
 <!-- 1. Hero -->
 <section class="hero-surface relative overflow-hidden" aria-labelledby="home-hero-title">
-  <div class="container-wm relative grid items-center gap-10 pb-12 pt-10 sm:pt-14 lg:grid-cols-12 lg:gap-6 lg:pb-16 lg:pt-16">
-    <div class="lg:col-span-6 xl:col-span-6">
+  <div class="container-wm grid items-center gap-10 pb-12 pt-10 sm:pt-14 lg:grid-cols-12 lg:gap-6 lg:pb-16 lg:pt-16">
+    <div class="relative z-10 lg:col-span-6 xl:col-span-6">
       ${eyebrow('AI-Powered Digital Solutions')}
       <h1 id="home-hero-title" class="mt-5 text-[2.6rem] font-extrabold leading-[1.05] tracking-tight text-navy-950 sm:text-6xl xl:text-[4.1rem]">Build Smarter.<br>Scale Faster.<br><span class="bg-gradient-to-r from-brand-600 via-brand-500 to-cyan-500 bg-clip-text text-transparent">Lead with AI.</span></h1>
       <p class="mt-6 max-w-xl text-lg leading-relaxed text-slate-600">White Messenger helps organisations transform complex business challenges into practical digital products through AI engineering, custom software and intelligent automation.</p>
@@ -47,9 +50,9 @@ export function homePage() {
         ${heroStats.map(([a, b]) => `<div><dt class="sr-only">${esc(b)}</dt><dd><span class="block text-lg font-extrabold text-navy-950">${esc(a)}</span><span class="mt-1 block text-xs font-medium text-slate-500">${esc(b)}</span></dd></div>`).join('')}
       </dl>
     </div>
-    <div class="relative lg:col-span-6 xl:col-span-6">
+    <div class="relative lg:col-span-6">
       <div class="absolute -inset-6 rounded-[2.5rem] bg-gradient-to-tr from-brand-100/80 via-white/0 to-cyan-100/70 blur-2xl" aria-hidden="true"></div>
-      ${img(ctx, 'home-hero', { eager: true, cls: 'relative w-full rounded-[2rem] border border-white object-cover shadow-card-lg', sizes: '(min-width: 1280px) 600px, (min-width: 1024px) 48vw, 100vw' })}
+      ${img(ctx, 'stock-hero', { eager: true, cls: 'relative aspect-[6/5] w-full rounded-[2rem] border border-white object-cover shadow-card-lg', sizes: '(min-width: 1280px) 600px, (min-width: 1024px) 48vw, 100vw' })}
     </div>
   </div>
 </section>
@@ -75,7 +78,7 @@ export function homePage() {
     </div>
     <div class="grid gap-5 sm:grid-cols-2 lg:col-span-8 xl:grid-cols-4">
       ${[['ai/index', 'AI Engineering', 'Generative AI, AI agents, chatbots, RAG and more.'], ['services/software-development', 'Custom Software Development', 'Scalable and secure software built around your processes.'], ['services/mobile-app-development', 'Mobile App Development', 'Native and cross-platform mobile applications.'], ['services/cloud-devops', 'Cloud & DevOps', 'Modern, scalable and reliable infrastructure.']].map(([id, t, d]) => `<a href="${href(ctx, id)}" class="card card-hover group flex flex-col overflow-hidden">
-        ${img(ctx, REG.get(id).image, { cls: 'aspect-[4/3] w-full object-cover', sizes: '(min-width: 1280px) 220px, (min-width: 640px) 45vw, 100vw', alt: '' })}
+        ${img(ctx, WWD_IMAGES[id], { cls: 'aspect-[7/5] w-full object-cover', sizes: '(min-width: 1280px) 220px, (min-width: 640px) 45vw, 100vw', alt: '' })}
         <div class="flex flex-1 flex-col p-5"><h3 class="font-bold text-navy-950">${esc(t)}</h3><p class="mt-2 flex-1 text-sm text-slate-600">${esc(d)}</p><span class="mt-4 flex items-center text-sm font-semibold text-brand-700">Learn More<span class="sr-only"> about ${esc(t)}</span><span class="arrow-dot">${icon('arrowRight', 'h-3.5 w-3.5')}</span></span></div>
       </a>`).join('')}
     </div>
@@ -94,7 +97,7 @@ export function homePage() {
     <ul class="grid grid-cols-2 gap-4 sm:grid-cols-4 lg:col-span-5" role="list">
       ${aiTiles.map(([id, t, ic]) => `<li><a href="${href(ctx, id)}" class="card card-hover flex h-full flex-col items-center gap-3 p-4 text-center">${iconTile(ic || REG.get(id.split('#')[0]).icon)}<span class="text-[13px] font-semibold leading-snug text-navy-950">${esc(t)}</span></a></li>`).join('')}
     </ul>
-    <div class="lg:col-span-3">${img(ctx, 'home-ai-cube', { cls: 'w-full rounded-3xl border border-white object-cover shadow-card', sizes: '(min-width: 1024px) 300px, 100vw' })}</div>
+    <div class="lg:col-span-3">${img(ctx, 'stock-ai-chip', { cls: 'mx-auto aspect-[4/5] w-full max-w-sm rounded-3xl border border-white object-cover shadow-card', sizes: '(min-width: 1024px) 300px, 100vw' })}</div>
   </div>
 </section>
 
@@ -103,7 +106,7 @@ export function homePage() {
   <div class="container-wm">
     ${homeHead(ctx, 'ind-title', 'Industries We Serve', 'Driving innovation across diverse industries with tailored digital solutions.', { label: 'View All Industries', id: 'industries/index' })}
     <ul class="grid grid-cols-2 gap-4 sm:grid-cols-4 xl:grid-cols-8" role="list">
-      ${homeIndustries.map((id) => { const e = REG.get(id); return `<li><a href="${href(ctx, id)}" class="card card-hover group flex h-full flex-col overflow-hidden">${img(ctx, e.image, { cls: 'aspect-[4/3] w-full object-cover', sizes: '(min-width: 1280px) 150px, (min-width: 640px) 24vw, 48vw', alt: '' })}<span class="flex flex-1 items-start justify-between gap-2 p-3"><span class="text-[13px] font-semibold leading-snug text-navy-950">${esc(e.title)}</span><span class="mt-0.5 text-brand-600">${icon('arrowRight', 'h-3.5 w-3.5')}</span></span></a></li>`; }).join('')}
+      ${homeIndustries.map((id) => { const e = REG.get(id); return `<li><a href="${href(ctx, id)}" class="card card-hover group flex h-full flex-col overflow-hidden">${img(ctx, `stock-ind-${id.split('/')[1].replace(/-(ecommerce|hospitality)$/, '')}`, { cls: 'aspect-[7/5] w-full object-cover', sizes: '(min-width: 1280px) 150px, (min-width: 640px) 24vw, 48vw', alt: '' })}<span class="flex flex-1 items-start justify-between gap-2 p-3"><span class="text-[13px] font-semibold leading-snug text-navy-950">${esc(e.title)}</span><span class="mt-0.5 text-brand-600">${icon('arrowRight', 'h-3.5 w-3.5')}</span></span></a></li>`; }).join('')}
     </ul>
   </div>
 </section>
@@ -152,11 +155,11 @@ export function homePage() {
 <section class="section" aria-labelledby="res-title">
   <div class="container-wm">
     ${homeHead(ctx, 'res-title', 'Latest Insights & Resources', 'Discover the latest trends, guides and practical thinking in AI and digital transformation.', { label: 'View All Resources', id: 'resources/index' })}
-    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">${articles.slice(0, 4).map((a) => resourceCard(ctx, { ...a, id: `resources/articles/${a.slug}`, readTime: a.readTime })).join('')}</div>
+    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">${articles.slice(0, 4).map((a, i) => resourceCard(ctx, { ...a, id: `resources/articles/${a.slug}`, image: `stock-res-${i + 1}` }, { aspect: 'aspect-[5/2]' })).join('')}</div>
   </div>
 </section>
 
-${ctaBanner(ctx)}
+${ctaBanner(ctx, { image: 'stock-cta' })}
 `;
   return {
     ctx, path: 'index.html', nav: 'home',

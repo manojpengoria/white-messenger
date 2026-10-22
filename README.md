@@ -115,6 +115,8 @@ No image-generation tool was available while building this site, so **every cont
 2. In `src/images.mjs`, set that entry's `status: 'final'`. This removes the placeholder marker, and `npm run images` will then never overwrite it.
 3. Run `npm run build`.
 
+**Homepage photographs** (hero, What We Do, AI capabilities, Industries, Latest Insights, CTA) are free photos from [Unsplash](https://unsplash.com/license) (Unsplash License: free for commercial use, no attribution required). `src/stock-images.mjs` lists each photo with its Unsplash page link; `npm run images:stock` downloads them, smart-crops each to its slot and exports sharp WebP at 1× and 2× into `assets/images/home/`. To change a photo, swap its `photo` id and re-run the script. Internal pages still use the placeholder illustrations.
+
 The homepage "Technologies We Work With" strip uses the official technology logos from the MIT-licensed [devicon](https://devicon.dev) package, copied into `assets/images/tech/` by `npm run pages`. The trademarks belong to their owners and are used only to name the technologies.
 
 The logo derivatives, favicons and `og/og-default.png` are generated from the official logo (`assets/images/logo/source/`).

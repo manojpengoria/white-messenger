@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "images": "node scripts/generate-images.mjs",
+    "images:stock": "node scripts/fetch-stock-images.mjs",
     "pages": "node src/build.mjs",
     "css": "tailwindcss -i assets/css/input.css -o assets/css/styles.css --minify",
     "css:watch": "tailwindcss -i assets/css/input.css -o assets/css/styles.css --watch",

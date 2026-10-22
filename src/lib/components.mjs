@@ -119,10 +119,10 @@ export function imageCard(ctx, id, { sizes = '(min-width: 1280px) 280px, (min-wi
 }
 
 /** Article / resource card. */
-export function resourceCard(ctx, a, { headingLevel = 3 } = {}) {
+export function resourceCard(ctx, a, { headingLevel = 3, aspect = 'aspect-[16/10]' } = {}) {
   const h = `h${headingLevel}`;
   return `<article class="card card-hover group relative flex h-full flex-col overflow-hidden" data-filter-item data-category="${esc(a.categorySlug)}" data-search="${esc((a.title + ' ' + a.excerpt + ' ' + a.category).toLowerCase())}">
-  <div class="relative overflow-hidden">${img(ctx, a.image, { cls: 'aspect-[16/10] w-full object-cover transition duration-500 group-hover:scale-[1.04]', sizes: '(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw', alt: '' })}
+  <div class="relative overflow-hidden">${img(ctx, a.image, { cls: `${aspect} w-full object-cover transition duration-500 group-hover:scale-[1.04]`, sizes: '(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw', alt: '' })}
     <span class="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-brand-700 shadow-sm">${esc(a.category)}</span></div>
   <div class="flex flex-1 flex-col p-6">
     <${h} class="text-lg font-bold leading-snug text-navy-950"><a href="${href(ctx, a.id)}" class="after:absolute after:inset-0 focus-visible:outline-none">${esc(a.title)}</a></${h}>
@@ -216,7 +216,7 @@ export function faq(faqs, { id = 'faq', title = 'Frequently asked questions', le
 /* ------------------------------------------------------------------ */
 /* CTA banner (matches homepage "Let's Build the Future Together")    */
 /* ------------------------------------------------------------------ */
-export function ctaBanner(ctx, { title = 'Let’s Build the Future Together', text = 'Discuss your project with our experts and explore how we can help you achieve your business goals with AI and technology.', primary = { label: 'Talk to Our Experts', id: 'contact-us/index' }, secondary } = {}) {
+export function ctaBanner(ctx, { title = 'Let’s Build the Future Together', text = 'Discuss your project with our experts and explore how we can help you achieve your business goals with AI and technology.', primary = { label: 'Talk to Our Experts', id: 'contact-us/index' }, secondary, image = 'cta-collaboration' } = {}) {
   return `<section class="py-16 sm:py-20" aria-labelledby="cta-title" data-shared="cta">
   <div class="container-wm">
     <div class="cta-surface relative overflow-hidden rounded-3xl border border-brand-100">
@@ -226,7 +226,7 @@ export function ctaBanner(ctx, { title = 'Let’s Build the Future Together', te
           <p class="mt-4 max-w-xl text-base leading-relaxed text-slate-600 sm:text-lg">${esc(text)}</p>
           <div class="mt-8 flex flex-wrap gap-3">${btnPrimary(ctx, primary.label, primary.id)}${secondary ? btnSecondary(ctx, secondary.label, secondary.id) : ''}</div>
         </div>
-        <div class="lg:col-span-6">${img(ctx, 'cta-collaboration', { cls: 'w-full rounded-2xl object-cover', sizes: '(min-width: 1024px) 600px, 100vw', alt: '' })}</div>
+        <div class="lg:col-span-6">${img(ctx, image, { cls: 'w-full rounded-2xl object-cover', sizes: '(min-width: 1024px) 600px, 100vw', alt: '' })}</div>
       </div>
     </div>
   </div>
