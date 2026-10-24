@@ -11,6 +11,7 @@
     "css": "tailwindcss -i assets/css/input.css -o assets/css/styles.css --minify",
     "css:watch": "tailwindcss -i assets/css/input.css -o assets/css/styles.css --watch",
     "build": "npm run pages && npm run css",
+    "export": "node scripts/export.mjs",
     "build:all": "npm run images && npm run build",
     "start": "node scripts/serve.mjs",
     "dev": "node scripts/serve.mjs",

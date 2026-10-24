@@ -29,6 +29,11 @@ Opening `index.html` directly from disk also works, because all links use relati
 
 > **Edit content in `src/`, not in the generated `.html` files.** `npm run pages` deletes and regenerates the HTML.
 
+## Deployment
+
+- **Vercel (static):** `vercel.json` runs `npm run build && npm run export` and publishes the `public/` folder. `npm run export` copies only the publishable files (HTML, `assets/`, `partials/`, `sitemap.xml`, `robots.txt`) into `public/`, which is git-ignored. Vercel serves `404.html` automatically.
+- **Node hosts (Render, Railway and similar):** `npm start` (or `npm run dev`) runs the Express server in `scripts/serve.mjs` on `process.env.PORT`. It serves the built files from the repo root and blocks `src/`, `scripts/` and config files.
+
 ## Project structure
 
 ```
