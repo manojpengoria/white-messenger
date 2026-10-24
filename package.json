@@ -13,6 +13,7 @@
     "build": "npm run pages && npm run css",
     "build:all": "npm run images && npm run build",
     "start": "node scripts/serve.mjs",
+    "dev": "node scripts/serve.mjs",
     "serve": "node scripts/serve.mjs",
     "qa": "node scripts/qa.mjs",
     "qa:browser": "node scripts/qa-browser.mjs"
