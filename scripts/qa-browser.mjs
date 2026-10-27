@@ -15,7 +15,8 @@ const CHROME = process.env.CHROME_PATH || '/Applications/Google Chrome.app/Conte
 const PORT = 8799;
 const BASE = `http://localhost:${PORT}/`;
 
-const server = spawn(process.execPath, [path.join(ROOT, 'scripts/serve.mjs'), '--port', String(PORT)], { stdio: 'ignore' });
+// MAIL_DRY_RUN logs emails instead of sending them, so the form flow can be tested end to end.
+const server = spawn(process.execPath, [path.join(ROOT, 'scripts/serve.mjs'), '--port', String(PORT)], { stdio: 'ignore', env: { ...process.env, MAIL_DRY_RUN: '1', TURNSTILE_SECRET_KEY: '' } });
 await new Promise((r) => setTimeout(r, 600));
 
 const sitemap = await readFile(path.join(ROOT, 'sitemap.xml'), 'utf8');
@@ -110,7 +111,8 @@ ok(await t.$eval('#iq-email-error', (e) => !e.hidden && /valid email/.test(e.tex
 await t.click('#iq-email', { clickCount: 3 });
 await t.type('#iq-email', 'asha@example.com');
 await t.click('#inquiry-form [data-submit]');
-ok(await t.$eval('[data-form-status]', (e) => /not\s+been sent/.test(e.textContent)), 'valid form explains backend is not connected (no fake success)');
+await t.waitForFunction(() => /has been sent|could not/i.test(document.querySelector('[data-form-status]').textContent), { timeout: 15000 });
+ok(await t.$eval('[data-form-status]', (e) => /has been sent/.test(e.textContent)), 'valid form submits to /api/inquiry and shows success');
 ok(await t.evaluate(() => localStorage.length === 0 && sessionStorage.length === 0), 'nothing stored in browser storage');
 
 await browser.close();

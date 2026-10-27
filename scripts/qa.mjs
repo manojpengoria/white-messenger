@@ -25,7 +25,7 @@ const NAV_TARGETS = ['ai/index.html', 'services/index.html', 'engagement-models/
 async function walk(dir) {
   const out = [];
   for (const e of await readdir(dir, { withFileTypes: true })) {
-    if (['node_modules', 'src', 'scripts', 'partials', '.git'].includes(e.name)) continue;
+    if (['node_modules', 'src', 'scripts', 'partials', 'public', 'api', '.git'].includes(e.name)) continue;
     const p = path.join(dir, e.name);
     if (e.isDirectory()) out.push(...await walk(p));
     else if (e.name.endsWith('.html')) out.push(p);

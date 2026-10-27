@@ -5,6 +5,7 @@
 import express from 'express';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createHandler } from '../api/_lib/handler.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const portArg = process.argv.indexOf('--port');
@@ -15,11 +16,17 @@ app.disable('x-powered-by');
 
 // Never expose source, tooling or dependencies.
 app.use((req, res, next) => {
-  if (/^\/(src|scripts|node_modules|\.git)(\/|$)|^\/(package(-lock)?\.json|tailwind\.config\.js)$/.test(req.path)) {
+  const isFormPost = req.method === 'POST' && /^\/api\/(inquiry|careers)$/.test(req.path);
+  if (!isFormPost && /^\/(src|scripts|api|node_modules|\.git)(\/|$)|^\/(package(-lock)?\.json|tailwind\.config\.js|vercel\.json)$/.test(req.path)) {
     return res.status(404).sendFile(path.join(ROOT, '404.html'));
   }
   next();
 });
+
+// Form submissions: the same handlers Vercel runs as serverless functions.
+const formBody = express.urlencoded({ extended: false, limit: '32kb' });
+app.post('/api/inquiry', formBody, createHandler('inquiry'));
+app.post('/api/careers', formBody, createHandler('careers'));
 
 app.use(express.static(ROOT, {
   index: 'index.html',

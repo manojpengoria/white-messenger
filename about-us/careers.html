@@ -209,7 +209,7 @@
 <section id="career-inquiry" aria-labelledby="career-title" class="section bg-white "><div class="container-wm"><div class="grid gap-10 lg:grid-cols-12">
       <div class="lg:col-span-4"><p class="eyebrow">Career inquiry</p><h2 id="career-title" class="section-title mt-3">Open roles and inquiries</h2><p class="mt-4 leading-relaxed text-slate-600">We do not list specific openings on this page at the moment. If you would like to be considered for future opportunities, send us a career inquiry with your areas of interest and a link to your profile or portfolio. We will keep your details on file in line with our privacy policy and contact you if a suitable role becomes available.</p>
         <div class="mt-6 rounded-2xl border border-slate-200 bg-surface p-5 text-sm text-slate-600"><p class="font-semibold text-navy-950">Prefer email?</p><p class="mt-1">Write to <a class="font-semibold text-brand-700 hover:underline" href="mailto:info@whitemessenger.com?subject=Career%20inquiry">info@whitemessenger.com</a> with “Career inquiry” in the subject line.</p></div></div>
-      <div class="lg:col-span-8"><form id="careers-form" class="card p-6 sm:p-8" novalidate data-validate data-form-name="careers" data-endpoint="" data-fallback-email="info@whitemessenger.com">
+      <div class="lg:col-span-8"><form id="careers-form" class="card p-6 sm:p-8" novalidate data-validate data-form-name="careers" data-endpoint="/api/careers" data-fallback-email="info@whitemessenger.com">
   <div class="mb-6 rounded-xl border border-red-200 bg-red-50 p-4 text-sm text-red-800" role="alert" tabindex="-1" data-error-summary hidden>
     <p class="font-semibold">Please correct the following:</p><ul class="mt-2 list-disc space-y-1 pl-5" data-error-list></ul>
   </div>
@@ -259,6 +259,7 @@
 </div>
     <!-- Spam trap: hidden from people, ignored by the backend if filled. -->
     <div class="hidden" aria-hidden="true"><label for="careers-form-website">Website</label><input id="careers-form-website" type="text" name="website" tabindex="-1" autocomplete="off"></div>
+    
     <div class="sm:col-span-2" data-field>
       <div class="flex items-start gap-3">
         <input id="careers-form-consent" name="consent" type="checkbox" value="yes" required aria-required="true" aria-describedby="careers-form-consent-error" class="mt-1 h-5 w-5 shrink-0 rounded border-slate-300 text-brand-600 focus:ring-brand-500">

@@ -174,6 +174,17 @@
         }
         summary.hidden = true;
 
+        // CAPTCHA (Cloudflare Turnstile) must be completed when present
+        var captcha = form.querySelector('[data-turnstile]');
+        var captchaError = form.querySelector('#' + form.id + '-captcha-error');
+        var token = form.querySelector('input[name="cf-turnstile-response"]');
+        if (captcha && (!token || !token.value)) {
+          if (captchaError) { captchaError.textContent = 'Please complete the security check before sending.'; captchaError.hidden = false; }
+          captcha.scrollIntoView({ block: 'center' });
+          return;
+        }
+        if (captchaError) captchaError.hidden = true;
+
         // Spam trap: silently stop if the hidden field was filled
         var trap = form.querySelector('input[name="website"]');
         if (trap && trap.value) return;
@@ -192,17 +203,42 @@
         }
 
         var btn = form.querySelector('[data-submit]');
+        var resetCaptcha = function () { if (captcha && window.turnstile) window.turnstile.reset(captcha); };
+        var fallback = 'Please try again, or email us at <a class="font-semibold underline" href="mailto:' + email + '?subject=' + subject + '">' + email + '</a>.';
         btn.disabled = true;
         btn.setAttribute('aria-busy', 'true');
         setStatus(form, 'info', 'Sending your message…');
-        fetch(endpoint, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' }, credentials: 'same-origin' })
+        fetch(endpoint, {
+          method: 'POST',
+          body: new URLSearchParams(new FormData(form)),
+          headers: { Accept: 'application/json' },
+          credentials: 'same-origin',
+        })
           .then(function (res) {
-            if (!res.ok) throw new Error('HTTP ' + res.status);
-            setStatus(form, 'success', '<p class="font-semibold">Thank you. Your message has been sent.</p><p class="mt-1">A member of our team will reply by email.</p>');
-            form.reset();
+            return res.json().catch(function () { return {}; }).then(function (json) { return { status: res.status, json: json }; });
+          })
+          .then(function (r) {
+            if (r.status === 200 && r.json.ok) {
+              setStatus(form, 'success', '<p class="font-semibold">Thank you. Your message has been sent.</p><p class="mt-1">We have emailed you a confirmation, and a member of our team will reply soon.</p>');
+              form.reset();
+              resetCaptcha();
+              return;
+            }
+            resetCaptcha();
+            if (r.status === 422 && r.json.errors) {
+              Object.keys(r.json.errors).forEach(function (name) {
+                var el = form.querySelector('[name="' + name + '"]');
+                if (el) showError(el, r.json.errors[name]);
+              });
+              setStatus(form, 'error', '<p class="font-semibold">Please check the highlighted fields.</p>');
+              return;
+            }
+            var msg = r.json.message || 'Sorry, we could not send your message.';
+            setStatus(form, 'error', '<p class="font-semibold">' + msg.replace(/</g, '&lt;') + '</p><p class="mt-1">' + fallback + '</p>');
           })
           .catch(function () {
-            setStatus(form, 'error', '<p class="font-semibold">Sorry, we could not send your message.</p><p class="mt-1">Please try again, or email us at <a class="font-semibold underline" href="mailto:' + email + '?subject=' + subject + '">' + email + '</a>.</p>');
+            resetCaptcha();
+            setStatus(form, 'error', '<p class="font-semibold">Sorry, we could not send your message.</p><p class="mt-1">' + fallback + '</p>');
           })
           .then(function () { btn.disabled = false; btn.removeAttribute('aria-busy'); });
       });

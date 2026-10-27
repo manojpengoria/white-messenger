@@ -33,11 +33,14 @@ export const site = {
     { name: 'YouTube', icon: 'youtube', url: '' },
   ],
 
-  // CONFIG PLACEHOLDER: form endpoints for the future Laravel backend (see README "Backend integration").
-  // While empty, forms validate in the browser and then explain that online submission is not connected yet.
+  // Form endpoints (serverless functions in /api, also mounted by the Express server).
+  // Set an endpoint to '' to fall back to the "not connected, please email us" message.
   forms: {
-    inquiryEndpoint: '',
-    careersEndpoint: '',
+    inquiryEndpoint: '/api/inquiry',
+    careersEndpoint: '/api/careers',
+    // Cloudflare Turnstile public site key, read at build time (Vercel env var TURNSTILE_SITE_KEY).
+    // When empty, no CAPTCHA widget is rendered.
+    turnstileSiteKey: process.env.TURNSTILE_SITE_KEY || '',
   },
 
   year: 2026,

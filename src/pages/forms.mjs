@@ -37,6 +37,12 @@ export function formShell({ id, name, endpointKey, fields, submitLabel, consentT
     ${fields.join('\n')}
     <!-- Spam trap: hidden from people, ignored by the backend if filled. -->
     <div class="hidden" aria-hidden="true"><label for="${id}-website">Website</label><input id="${id}-website" type="text" name="website" tabindex="-1" autocomplete="off"></div>
+    ${site.forms.turnstileSiteKey ? `<div class="sm:col-span-2" data-field>
+      <p class="field-label">Security check <span class="text-red-600" aria-hidden="true">*</span></p>
+      <div class="cf-turnstile" data-sitekey="${esc(site.forms.turnstileSiteKey)}" data-action="${name}" data-theme="light" data-size="flexible" data-turnstile></div>
+      <p id="${id}-captcha-error" class="field-error" data-error hidden></p>
+      <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    </div>` : ''}
     <div class="sm:col-span-2" data-field>
       <div class="flex items-start gap-3">
         <input id="${id}-consent" name="consent" type="checkbox" value="yes" required aria-required="true" aria-describedby="${id}-consent-error" class="mt-1 h-5 w-5 shrink-0 rounded border-slate-300 text-brand-600 focus:ring-brand-500">

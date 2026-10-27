@@ -85,30 +85,31 @@ Search the code for `CONFIG PLACEHOLDER`. Key items:
 
 The site deliberately does **not** state a founding year, headcount, client names, awards, certifications, ratings, pricing or guaranteed outcomes. Case studies are clearly labelled **illustrative scenarios**.
 
-## Backend integration (forms)
+## Contact and careers forms (email delivery)
 
-A static site cannot securely send email or store leads. Both forms (`#inquiry-form` on Contact, `#careers-form` on Careers):
+Both forms post to serverless functions in `api/` (`/api/inquiry`, `/api/careers`). Vercel deploys these automatically, and the Express server mounts the same handlers. For each valid submission:
 
-- validate in the browser with accessible inline errors, an error summary, `aria-invalid` and focus management;
-- **never** write form data to `localStorage`, `sessionStorage` or cookies;
-- if no endpoint is configured, tell the user the message has **not** been sent and offer a `mailto:` link instead of showing a fake success;
-- if an endpoint is configured, `POST` `multipart/form-data` to it with `Accept: application/json`, then show a success or error message.
+1. Browser validation runs (accessible inline errors and an error summary). Nothing is stored in the browser.
+2. The server re-validates every field, ignores honeypot submissions, applies a best-effort rate limit (5 per IP per 10 minutes) and verifies the **Cloudflare Turnstile** CAPTCHA.
+3. The full submission is emailed to `MAIL_TO`, with **Reply-To set to the visitor**, so you can answer directly.
+4. A short **confirmation email** goes to the visitor. It deliberately does not repeat their message, so the form cannot be abused to relay spam.
 
-### Laravel integration contract (future phase)
+### Setup (once)
 
-Set `forms.inquiryEndpoint` (e.g. `/api/inquiries`) and `forms.careersEndpoint` (e.g. `/api/career-inquiries`), then rebuild.
+All configuration is in environment variables (see `.env.example`). On Vercel, add them under **Project → Settings → Environment Variables**, then redeploy.
 
-**Inquiry fields:** `full_name`*, `business_email`*, `company`*, `phone`, `country`*, `service`*, `budget`, `timeline`, `project_details`* (min 30 characters), `consent`* (`yes`), `website` (honeypot; must be empty).
-**Career fields:** `full_name`*, `email`*, `phone`, `area`*, `experience`*, `profile_url`* (URL), `message`* (min 30 characters), `consent`*, `website` (honeypot).
+| Variable | Required | Purpose |
+|---|---|---|
+| `MAIL_TO` | optional | Recipient(s). Defaults to `info@whitemessenger.com`. |
+| `MAIL_FROM` | recommended | Sender, e.g. `White Messenger <noreply@whitemessenger.com>` |
+| `RESEND_API_KEY` | option A | [Resend](https://resend.com) API key. Verify `whitemessenger.com` in Resend (add its DNS records) so emails are delivered and not marked as spam. |
+| `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS` | option B | Any mailbox (Google Workspace/Gmail app password, Zoho, Hostinger…). Used when no Resend key is set. |
+| `TURNSTILE_SITE_KEY` | yes | Public site key from Cloudflare Turnstile. Read **at build time**, so redeploy after setting it. |
+| `TURNSTILE_SECRET_KEY` | yes | Secret key used by the server to verify the CAPTCHA. |
 
-The backend should:
+Without `TURNSTILE_SITE_KEY` no widget is shown, and without `TURNSTILE_SECRET_KEY` verification is skipped (the server logs a warning). Without an email provider the API returns an error, and the form offers the visitor an email link instead.
 
-1. Re-validate every field server-side (Laravel Form Request). Never trust client validation.
-2. Reject submissions where `website` is non-empty; add rate limiting (`throttle` middleware) and optionally a CAPTCHA.
-3. Use CSRF protection (same-origin session plus `X-CSRF-TOKEN`), or a stateless API route protected by origin checks and rate limits.
-4. Store leads in the database and/or forward them to a CRM; send notification emails through a queued mailer. Keep credentials in `.env`, never in front-end JavaScript.
-5. Return `2xx` JSON on success and `422` with field errors on validation failure.
-6. Apply the retention periods defined in the Privacy Policy. To accept CV uploads later, add a file field plus server-side type and size checks and malware scanning.
+**Local testing:** `MAIL_DRY_RUN=1 npm run dev` prints emails to the console instead of sending them. Cloudflare's test keys (`1x00000000000000000000AA` / `1x0000000000000000000000000000000AA`) always pass.
 
 ## Images
 
