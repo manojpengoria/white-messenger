@@ -1,3 +1,5 @@
+import './load-env.mjs';
+
 /**
  * Global site configuration.
  * Everything marked CONFIG PLACEHOLDER must be confirmed by White Messenger before launch.

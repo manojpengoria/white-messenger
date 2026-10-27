@@ -2,6 +2,7 @@
  * Express server for the pre-built static site.
  * Production: `npm start` (listens on process.env.PORT). Local: `npm run serve [-- --port 8080]`.
  */
+import '../src/load-env.mjs';
 import express from 'express';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
