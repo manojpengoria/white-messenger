@@ -2,6 +2,7 @@ import { site } from '../site.config.mjs';
 import { header, footer } from './components.mjs';
 import { esc, imageAbs } from './html.mjs';
 import { icon } from './icons.mjs';
+import { ASSET_VERSION as V } from './asset-version.mjs';
 
 /** Canonical URL for a page path; folder index pages canonicalise to the folder. */
 export const canonical = (path) => `${site.url}/${path.replace(/(^|\/)index\.html$/, '$1')}`;
@@ -39,13 +40,13 @@ ${noindex ? '<meta name="robots" content="noindex, follow">' : ''}
 <link rel="icon" type="image/png" sizes="192x192" href="${r}assets/images/logo/icon-192.png">
 <link rel="apple-touch-icon" href="${r}assets/images/logo/apple-touch-icon.png">
 <link rel="preload" href="${r}assets/fonts/plus-jakarta-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="${r}assets/css/styles.css">
+<link rel="stylesheet" href="${r}assets/css/styles.css?v=${V}">
 <script>document.documentElement.classList.add('js')</script>
-<script src="${r}assets/js/components.js" defer></script>
-<script src="${r}assets/js/main.js" defer></script>
+<script src="${r}assets/js/components.js?v=${V}" defer></script>
+<script src="${r}assets/js/main.js?v=${V}" defer></script>
 ${ld}
 </head>
-<body data-root="${r}" data-nav="${ctx.nav || ''}" class="min-h-screen bg-white font-sans text-ink antialiased">
+<body data-root="${r}" data-v="${V}" data-nav="${ctx.nav || ''}" class="min-h-screen bg-white font-sans text-ink antialiased">
 <a href="#main" class="skip-link">Skip to main content</a>
 ${header(r)}
 <main id="main" tabindex="-1">

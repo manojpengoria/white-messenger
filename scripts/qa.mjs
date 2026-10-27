@@ -78,7 +78,8 @@ for (const file of files) {
       const urls = attr === 'srcset' ? url.split(',').map((s) => s.trim().split(' ')[0]) : [url];
       for (const u of urls) {
         if (/^(https?:|mailto:|tel:|data:|#)/.test(u)) continue;
-        const [target, hash] = u.split('#');
+        const [withQuery, hash] = u.split('#');
+        const target = withQuery.split('?')[0];
         const abs = path.resolve(path.dirname(file), target);
         linkCount++;
         if (!(await exists(abs))) { fail(`${rel}: broken ${attr} → ${u}`); continue; }

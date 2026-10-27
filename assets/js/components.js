@@ -191,7 +191,7 @@
       if (!indexPromise) {
         indexPromise = new Promise(function (resolve, reject) {
           var s = document.createElement('script');
-          s.src = root + 'assets/js/search-index.js';
+          s.src = root + 'assets/js/search-index.js?v=' + (body.getAttribute('data-v') || '');
           s.onload = function () { resolve(window.WM_SEARCH_INDEX || []); };
           s.onerror = reject;
           document.head.appendChild(s);

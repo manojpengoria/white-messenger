@@ -17,7 +17,7 @@
     "dev": "node scripts/serve.mjs",
     "serve": "node scripts/serve.mjs",
     "qa": "node scripts/qa.mjs",
-    "qa:browser": "node scripts/qa-browser.mjs"
+    "qa:browser": "TURNSTILE_SITE_KEY= npm run build && node scripts/qa-browser.mjs"
   },
   "devDependencies": {
     "@fontsource-variable/plus-jakarta-sans": "^5.1.1",
