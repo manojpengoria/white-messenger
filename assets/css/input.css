@@ -85,7 +85,6 @@
   /* Footer */
   .footer-link { @apply text-sm text-slate-600 transition hover:text-brand-700 hover:underline; }
   .social-btn { @apply inline-flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-white text-navy-900 transition hover:border-brand-300 hover:text-brand-700; }
-  .social-btn.is-placeholder { @apply cursor-not-allowed opacity-60 hover:border-slate-200 hover:text-navy-900; }
 
   /* Accordion */
   .accordion-trigger { @apply flex w-full items-center justify-between gap-4 px-5 py-5 text-left text-base font-semibold text-navy-950 transition hover:text-brand-700 sm:px-6; }

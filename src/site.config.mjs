@@ -26,12 +26,12 @@ export const site = {
     },
   },
 
-  // CONFIG PLACEHOLDER: add real profile URLs. Empty URLs render as visibly disabled icons.
+  // Social profiles. Entries with an empty url are not shown anywhere.
   social: [
-    { name: 'LinkedIn', icon: 'linkedin', url: '' },
-    { name: 'X', icon: 'xlogo', url: '' },
-    { name: 'Facebook', icon: 'facebook', url: '' },
-    { name: 'Instagram', icon: 'instagram', url: '' },
+    { name: 'LinkedIn', icon: 'linkedin', url: 'https://www.linkedin.com/company/white-messenger' },
+    { name: 'X', icon: 'xlogo', url: 'https://x.com/whitemessenger9' },
+    { name: 'Facebook', icon: 'facebook', url: 'https://www.facebook.com/people/White-Messenger-Private-Limited/61595970689506/' },
+    { name: 'Instagram', icon: 'instagram', url: 'https://www.instagram.com/whitemessenger9/' },
     { name: 'YouTube', icon: 'youtube', url: '' },
   ],
 

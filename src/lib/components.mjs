@@ -381,9 +381,8 @@ export function footer(root) {
   const quickLabels = { index: 'Home', 'ai/index': 'AI', 'services/index': 'Services', 'engagement-models/index': 'Engagement Models', 'industries/index': 'Industries', 'solutions/index': 'Solutions', 'about-us/index': 'About Us', 'resources/index': 'Resources', 'contact-us/index': 'Contact Us' };
   const services = ['ai/index', 'services/web-development', 'services/mobile-app-development', 'services/saas-development', 'services/ecommerce-development', 'services/cloud-devops', 'services/api-integration', 'services/ui-ux-design', 'services/qa-testing'];
   const serviceLabels = { 'ai/index': 'AI Development' };
-  const social = site.social.map((s) => s.url
-    ? `<a href="${esc(s.url)}" class="social-btn" rel="noopener" target="_blank">${icon(s.icon, 'h-4 w-4')}<span class="sr-only">${esc(s.name)} (opens in a new tab)</span></a>`
-    : `<span class="social-btn is-placeholder" role="img" aria-label="${esc(s.name)} profile coming soon" title="${esc(s.name)}: profile link coming soon" data-social-placeholder>${icon(s.icon, 'h-4 w-4')}</span>`).join('');
+  const social = site.social.filter((s) => s.url).map((s) =>
+    `<a href="${esc(s.url)}" class="social-btn" target="_blank" rel="noopener noreferrer" title="${esc(s.name)}">${icon(s.icon, 'h-4 w-4')}<span class="sr-only">White Messenger on ${esc(s.name)} (opens in a new tab)</span></a>`).join('');
   const col = (title, html) => `<div><h2 class="text-sm font-bold uppercase tracking-wider text-navy-950">${title}</h2><div class="mt-5">${html}</div></div>`;
   const list = (ids, labels = {}) => `<ul class="space-y-2.5" role="list">${ids.map((id) => `<li><a class="footer-link" href="${navLink(root, id)}">${esc(labels[id] || get(id).title)}</a></li>`).join('')}</ul>`;
 
@@ -392,7 +391,7 @@ export function footer(root) {
     <div class="sm:col-span-2 lg:col-span-4">
       <a href="${root}index.html" class="inline-block rounded-lg" aria-label="White Messenger home"><img src="${root}assets/images/logo/white-messenger-logo-360.webp" srcset="${root}assets/images/logo/white-messenger-logo-360.webp 360w, ${root}assets/images/logo/white-messenger-logo-720.webp 720w" sizes="170px" width="360" height="98" alt="White Messenger" class="h-11 w-auto" loading="lazy" decoding="async"></a>
       <p class="mt-5 max-w-sm text-sm leading-relaxed text-slate-600">White Messenger is an AI and software engineering partner. We design, build and run intelligent digital products that help organisations work smarter and grow with confidence.</p>
-      <div class="mt-6 flex flex-wrap gap-2">${social}</div>
+      ${social ? `<div class="mt-6 flex flex-wrap gap-2">${social}</div>` : ''}
     </div>
     <div class="lg:col-span-2">${col('Quick Links', list(quick, quickLabels))}</div>
     <div class="lg:col-span-3">${col('Our Services', list(services, serviceLabels))}</div>
