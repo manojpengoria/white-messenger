@@ -79,7 +79,7 @@ Search the code for `CONFIG PLACEHOLDER`. Key items:
 | Social profile URLs | `src/site.config.mjs` → `social` | Empty. Icons render as visibly disabled "coming soon" badges with no `#` links. Add URLs to activate them. |
 | Form endpoints | `src/site.config.mjs` → `forms` | Empty (see below) |
 | Budget bands on the contact form | `src/pages/contact.mjs` → `BUDGETS` | USD ranges. Adjust the currency and bands. |
-| Phone display format | `src/site.config.mjs` | `+91 77909 92982` (the `+91` country code was added) |
+| Phone display format | `src/site.config.mjs` | `+91 86909 92982` (the `+91` country code was added) |
 | Privacy Policy / Terms | `src/pages/contact.mjs` | **Drafts.** They carry an on-page notice and must be reviewed by legal counsel. |
 | Technology lists | `src/content/*.mjs` (`tech.groups`) | Based on the stack in the approved homepage design (Laravel, Node.js, React, Next.js, Vue.js, Python, AWS, Azure, Kubernetes, MySQL, PostgreSQL) plus generic categories. Confirm before launch. |
 

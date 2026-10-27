@@ -14,8 +14,8 @@ export const site = {
 
   contact: {
     email: 'info@whitemessenger.com',
-    phoneDisplay: '+91 77909 92982',
-    phoneHref: '+917790992982',
+    phoneDisplay: '+91 86909 92982',
+    phoneHref: '+918690992982',
     addressLines: ['504, Shreya Heights, Meera Marg', 'Banipark, Jaipur 302016', 'Rajasthan, India'],
     address: {
       streetAddress: '504, Shreya Heights, Meera Marg, Banipark',
