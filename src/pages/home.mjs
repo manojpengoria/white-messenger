@@ -8,6 +8,7 @@ import { articles } from '../content/articles.mjs';
 import { organizationLd } from '../lib/layout.mjs';
 import { site } from '../site.config.mjs';
 import { ctxFor } from '../lib/html.mjs';
+import { heroSlider } from './hero-slider.mjs';
 
 // Official technology logos (from the MIT-licensed devicon package, copied locally by the build; see src/build.mjs).
 export const TECH = [
@@ -28,9 +29,6 @@ const WWD_IMAGES = { 'ai/index': 'stock-wwd-ai', 'services/software-development'
 
 export function homePage() {
   const ctx = ctxFor('index.html', 'home');
-  const heroStats = [
-    ['13', 'Service areas'], ['AI-Driven', 'Innovation'], ['End-to-End', 'Digital solutions'], ['Your Trusted', 'Technology partner'],
-  ];
   const aiTiles = [
     ['ai/generative-ai', 'Generative AI Development'], ['ai/ai-agent-development', 'AI Agent Development'], ['ai/ai-chatbot-development', 'AI Chatbot Development'], ['ai/ai-automation', 'Intelligent Automation'],
     ['ai/machine-learning', 'Machine Learning Solutions'], ['solutions/predictive-analytics', 'Predictive Analytics'], ['ai/machine-learning#capabilities', 'Computer Vision', 'eye'], ['solutions/ai-knowledge-management', 'RAG & Knowledge Management'],
@@ -38,24 +36,8 @@ export function homePage() {
   const homeIndustries = ['healthcare', 'fintech', 'retail-ecommerce', 'manufacturing', 'education', 'logistics', 'real-estate', 'travel-hospitality'].map((s) => `industries/${s}`);
 
   const body = `
-<!-- 1. Hero -->
-<section class="hero-surface relative overflow-hidden" aria-labelledby="home-hero-title">
-  <div class="container-wm grid items-center gap-10 pb-12 pt-10 sm:pt-14 lg:grid-cols-12 lg:gap-6 lg:pb-16 lg:pt-16">
-    <div class="relative z-10 lg:col-span-6 xl:col-span-6">
-      ${eyebrow('AI-Powered Digital Solutions')}
-      <h1 id="home-hero-title" class="mt-5 text-[2.6rem] font-extrabold leading-[1.05] tracking-tight text-navy-950 sm:text-6xl xl:text-[4.1rem]">Build Smarter.<br>Scale Faster.<br><span class="bg-gradient-to-r from-brand-600 via-brand-500 to-cyan-500 bg-clip-text text-transparent">Lead with AI.</span></h1>
-      <p class="mt-6 max-w-xl text-lg leading-relaxed text-slate-600">White Messenger helps organisations transform complex business challenges into practical digital products through AI engineering, custom software and intelligent automation.</p>
-      <div class="mt-8 flex flex-wrap gap-3">${btnPrimary(ctx, 'Discuss Your Project', 'contact-us/index')}${btnSecondary(ctx, 'Explore Our Services', 'services/index')}</div>
-      <dl class="mt-10 grid grid-cols-2 gap-x-6 gap-y-6 border-t border-slate-200/80 pt-8 sm:grid-cols-4">
-        ${heroStats.map(([a, b]) => `<div><dt class="sr-only">${esc(b)}</dt><dd><span class="block text-lg font-extrabold text-navy-950">${esc(a)}</span><span class="mt-1 block text-xs font-medium text-slate-500">${esc(b)}</span></dd></div>`).join('')}
-      </dl>
-    </div>
-    <div class="relative lg:col-span-6">
-      <div class="absolute -inset-6 rounded-[2.5rem] bg-gradient-to-tr from-brand-100/80 via-white/0 to-cyan-100/70 blur-2xl" aria-hidden="true"></div>
-      ${img(ctx, 'stock-hero', { eager: true, cls: 'relative aspect-[6/5] w-full rounded-[2rem] border border-white object-cover shadow-card-lg', sizes: '(min-width: 1280px) 600px, (min-width: 1024px) 48vw, 100vw' })}
-    </div>
-  </div>
-</section>
+<!-- 1. Hero slider (src/pages/hero-slider.mjs) -->
+${heroSlider(ctx)}
 
 <!-- 2. Technology strip -->
 <section class="border-y border-slate-200/70 bg-white" aria-labelledby="tech-title">
@@ -165,6 +147,6 @@ ${ctaBanner(ctx, { image: 'stock-cta' })}
     ctx, path: 'index.html', nav: 'home',
     title: 'White Messenger | AI Engineering & Software Development Company',
     description: 'White Messenger helps organisations build smarter and scale faster with AI engineering, custom software, web and mobile apps, cloud and intelligent automation.',
-    image: 'home-hero', body, jsonld: [organizationLd(), { '@context': 'https://schema.org', '@type': 'WebSite', name: 'White Messenger', url: `${site.url}/` }],
+    image: 'home-hero', body, scripts: ['assets/js/hero-slider.js'], jsonld: [organizationLd(), { '@context': 'https://schema.org', '@type': 'WebSite', name: 'White Messenger', url: `${site.url}/` }],
   };
 }
