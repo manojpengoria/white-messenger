@@ -8,7 +8,7 @@ import { ASSET_VERSION as V } from './asset-version.mjs';
 export const canonical = (path) => `${site.url}/${path.replace(/(^|\/)index\.html$/, '$1')}`;
 
 export function layout(page) {
-  const { ctx, path, title, description, ogType = 'website', image, jsonld = [], body, noindex = false } = page;
+  const { ctx, path, title, description, ogType = 'website', image, jsonld = [], body, noindex = false, scripts = [] } = page;
   const r = ctx.root;
   const fullTitle = path === 'index.html' ? title : `${title} | White Messenger`;
   const ogImage = (image && imageAbs(site.url, image)) || `${site.url}/assets/images/og/og-default.png`;
@@ -43,7 +43,7 @@ ${noindex ? '<meta name="robots" content="noindex, follow">' : ''}
 <link rel="stylesheet" href="${r}assets/css/styles.css?v=${V}">
 <script>document.documentElement.classList.add('js')</script>
 <script src="${r}assets/js/components.js?v=${V}" defer></script>
-<script src="${r}assets/js/main.js?v=${V}" defer></script>
+<script src="${r}assets/js/main.js?v=${V}" defer></script>${scripts.map((src) => `\n<script src="${r}${src}?v=${V}" defer></script>`).join('')}
 ${ld}
 </head>
 <body data-root="${r}" data-v="${V}" data-nav="${ctx.nav || ''}" class="min-h-screen bg-white font-sans text-ink antialiased">
